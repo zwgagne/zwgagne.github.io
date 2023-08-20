@@ -4,7 +4,7 @@
     Commons Variables
 -----------------------------------*/
 var windows = $(window);
-    
+
 /*--
     Side Header Open & Close Functions
 ----------------------------------------------------------*/
@@ -79,18 +79,18 @@ $('.side-menu').on('click', 'li a, li a .menu-expand', function(e) {
         return false;
     }
 });
-    
+
 /*--
     Full Page
 ----------------------------------------------------------*/
 $('#fullpage').fullpage({
     menu: '.fullpage-menu',
     lockAnchors: false,
-    anchors: ['home', 'about', 'service', 'portfolio', 'blog', 'contact'],
+    anchors: ['accueil', 'a-propos', 'competences'],
     scrollOverflow: true,
     navigation: true,
     verticalCentered: false,
-    navigationTooltips: ['Home', 'About', 'Service', 'Portfolio', 'Blog', 'Contact'],
+    navigationTooltips: [ 'Accueil', 'À propos', 'Compétences'],
     responsiveWidth: 991,
 });
 
@@ -118,7 +118,7 @@ windows.resize(function(){
     fpNavPosition();
     fpNavCloseOnClickMobile();
 });
-    
+
 /*--
     Home Portfolio Slider
 ----------------------------------------------------------*/
@@ -176,7 +176,7 @@ masonryGrid.imagesLoaded( function() {
         itemSelector: '.masonry-grid [class*="col-"]',
     });
 });
- 
+
 
 /*--
     Custom Scroll Bar
@@ -188,5 +188,5 @@ $('.custom-scroll').each(function(){
     }
 });
 
-    
-})(jQuery);	
+
+})(jQuery);
